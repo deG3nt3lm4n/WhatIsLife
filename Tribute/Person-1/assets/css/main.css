@@ -1,3 +1,6 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -24,12 +27,99 @@ img {
     width: 500px;
 }
 
+/* Utilites */
+.clr {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.l-heading {
+    font-size: 40px;
+    font-weight: 500;
+    /* padding: 10px; */
+}
+
 /* main Header */
 #mainHeader {
     width: 100%;
-    height: 1150px;
+    height: 975px;
+    background-color: #000;
+    text-align: center;
+    color: #ccc;
+}
+
+#mainHeader #title,
+#mainHeader #description {
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#mainHeader #title {
+    padding-top: 10px;
+    border-top: 10px solid firebrick;
+    font-size: 50px;
+}
+
+#mainHeader #description {
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+#mainHeader #mainImgBox {
+    /* border: 2px solid #000; */
+    border-top: 10px solid navy;
+    border-bottom: 10px solid navy;
+    background: radial-gradient(circle, firebrick 15%, rgba(0, 0, 0, .4) 20%, transparent),
+        url('../img/header-bg.jpeg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainHeader img {
+    display: block;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 7px solid navy;
+}
+
+#mainHeader #mainImgBox figcaption {
+    margin-top: 30px;
+    max-width: 350px;
+    color: #fff;
+    background-color: #000;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 3px #ccc;
+    padding: 20px;
+
+}
+
+/* Main Info */
+
+#main-Info {
     background-color: #ccc;
+    max-width: 100%;
+    height: 500px;
     text-align: center;
 }
 
-#mainHeader #mainImgBox {}
+#main-Info p {
+    padding: 0 20px;
+}
+
+
+#main-Info #about {
+    float: left;
+    max-width: 50%;
+    height: 100%;
+}
+
+
+#main-Info #goal {
+    float: right;
+    max-width: 50%;
+    height: 100%;
+}
+
+#main-info #songList {}
